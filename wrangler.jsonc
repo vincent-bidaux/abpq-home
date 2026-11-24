@@ -5,5 +5,18 @@
   "compatibility_date": "2026-11-01",
   "workers_dev": false,
   // Pas de domaine propre : abpq.cc est servi par abpq-redirections, qui transmet ici tout ce qui n'est pas une redirection.
-  "kv_namespaces": [{ "binding": "SHOTS", "id": "077948d97b70444ab257c389c3db1e5d" }]
+  "kv_namespaces": [
+    { "binding": "SHOTS", "id": "077948d97b70444ab257c389c3db1e5d" },
+    { "binding": "DATA", "id": "dc3a8eb1627b4c9baa1f886627edb1ca" }
+  ],
+  "send_email": [{ "name": "MAIL", "destination_address": "vincent.bidaux@gmail.com" }],
+  "vars": {
+    "ADMIN_EMAIL": "vincent.bidaux@gmail.com",
+    "MAIL_FROM": "admin@abpq.cc",
+    "CF_ACCOUNT_ID": "956abdb130ee13a8211994a876900e35",
+    "ZONE_ID": "0b6d14486323440db74224af921bb8b9"
+  },
+  "triggers": { "crons": ["7 * * * *"] },
+  "observability": { "enabled": true }
+  // Secrets : SESSION_KEY (cookies admin), CF_API_TOKEN (lecture DNS + Browser Rendering, pour la découverte auto)
 }
