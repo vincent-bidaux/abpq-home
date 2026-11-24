@@ -106,7 +106,7 @@ section{padding-top:72px}
 .cta{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;background:var(--accent);color:var(--bg);font:600 14px 'JetBrains Mono',monospace}
 .cta:hover{filter:brightness(1.1)}
 .case-smalls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:20px}
-.small{aspect-ratio:16/10}
+.small{aspect-ratio:16/10;margin:0}
 .small.is-mobile img{object-fit:contain;padding:14px 0}
 /* showcases */
 .shows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
