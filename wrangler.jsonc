@@ -4,6 +4,6 @@
   "main": "src/index.js",
   "compatibility_date": "2026-11-01",
   "workers_dev": false,
-  "routes": [{ "pattern": "apps.abpq.cc", "custom_domain": true }],
+  // Pas de domaine propre : abpq.cc est servi par abpq-redirections, qui transmet ici tout ce qui n'est pas une redirection.
   "kv_namespaces": [{ "binding": "SHOTS", "id": "077948d97b70444ab257c389c3db1e5d" }]
 }
